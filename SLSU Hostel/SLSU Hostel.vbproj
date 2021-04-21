@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45CFF731-691C-47BC-806A-6EDF00A814C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SLSU_Hostel.My.MyApplication</StartupObject>
+    <RootNamespace>SLSU_Hostel</RootNamespace>
+    <AssemblyName>SLSU Hostel</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SLSU Hostel.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SLSU Hostel.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\Bunifu Framework\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Create Account User Controls\CreateAccount.Designer.vb">
+      <DependentUpon>CreateAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create Account User Controls\CreateAccount.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Create Account User Controls\DeleteAccount.Designer.vb">
+      <DependentUpon>DeleteAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create Account User Controls\DeleteAccount.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login User Controls\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login User Controls\About.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login User Controls\Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login User Controls\Settings.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login User Controls\UserLogin.Designer.vb">
+      <DependentUpon>UserLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login User Controls\UserLogin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main User Controls\AddUserAccount.Designer.vb">
+      <DependentUpon>AddUserAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main User Controls\AddUserAccount.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main User Controls\UserHome.Designer.vb">
+      <DependentUpon>UserHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main User Controls\UserHome.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main User Controls\UserPayments.Designer.vb">
+      <DependentUpon>UserPayments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main User Controls\UserPayments.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main User Controls\UserReservation.Designer.vb">
+      <DependentUpon>UserReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main User Controls\UserReservation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main User Controls\UserRoomsInformation.Designer.vb">
+      <DependentUpon>UserRoomsInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main User Controls\UserRoomsInformation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main User Controls\UserSearch.Designer.vb">
+      <DependentUpon>UserSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main User Controls\UserSearch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ConnectionStringModule.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Create Account User Controls\CreateAccount.resx">
+      <DependentUpon>CreateAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create Account User Controls\DeleteAccount.resx">
+      <DependentUpon>DeleteAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login User Controls\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login User Controls\Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login User Controls\UserLogin.resx">
+      <DependentUpon>UserLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main User Controls\AddUserAccount.resx">
+      <DependentUpon>AddUserAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main User Controls\UserHome.resx">
+      <DependentUpon>UserHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main User Controls\UserPayments.resx">
+      <DependentUpon>UserPayments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main User Controls\UserReservation.resx">
+      <DependentUpon>UserReservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main User Controls\UserRoomsInformation.resx">
+      <DependentUpon>UserRoomsInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main User Controls\UserSearch.resx">
+      <DependentUpon>UserSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
